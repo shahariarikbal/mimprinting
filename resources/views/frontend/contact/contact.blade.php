@@ -25,7 +25,7 @@
                         <h5 class="title">
                             Phone
                         </h5>
-                        <a href="tel:+65-98112405">+65-98112405</a>
+                        <a href="tel:+6594717964">+6594717964</a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -36,7 +36,7 @@
                         <h5 class="title">
                             Email
                         </h5>
-                        <a href="mailto:hndymanservice.sg@gmail.com">hndymanservice.sg@gmail.com</a>
+                        <a href="mailto:mimpainting18@gmail.com">mimpainting18@gmail.com</a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -48,7 +48,7 @@
                             Address
                         </h5>
                         <p>
-                            30 Roberts Lane, #02-01 Singapore 218309, Singapore
+                            205 baliester rd #02-03 ,the mezzo singapore 329682
                         </p>
                     </div>
                 </div>

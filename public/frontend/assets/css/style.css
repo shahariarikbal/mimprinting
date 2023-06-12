@@ -559,8 +559,13 @@ body {
     display: block;
 }
 
+.image-grid-inner .item a img {
+    width: 100%!important;
+    border: 1px solid #fc9d01;
+}
+
 .image-grid-inner .item {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .image-grid-inner .item a i {
@@ -662,6 +667,111 @@ body {
 }
 
 /*Stage Renovation section css End*/
+
+/*Blog section css start*/
+.blog-item-outer {
+    border-radius: 10px;
+    padding: 20px 15px;
+    text-align: center;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    margin-bottom: 30px;
+    display: block;
+    transition: 0.25s opacity, 0.25s visibility, transform 1.5s cubic-bezier(0, 0, 0.2, 1), -webkit-transform 1.5s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.blog-section {
+    padding: 50px 0;
+}
+
+.blog-item-image {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.blog-item-name {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.blog-item-text {
+    color: #5b5b5b;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+.blog-item-outer:hover {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05) translateZ(0);
+    transform: scale3d(1.05, 1.05, 1.05) translateZ(0);
+}
+/*Blog section css End*/
+
+/*Blog details page css start*/
+.blog-details-image {
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+}
+
+.blog-details-title {
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.blog-details-des {
+    font-size: 15px;
+    font-weight: 400;
+    color: #111;
+}
+
+.recent-blog-wrapper {
+    background: rgb(252 157 1 / 22%);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.recent-blog-title-inner .title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+
+.recent-blog-outer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.recent-blog-image-inner {
+    margin-right: 10px;
+}
+
+.recent-blog-image-inner .recent-blog-image {
+    display: block;
+}
+
+.recent-blog-image-inner .recent-blog-image .recent-blog-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.recent-blog-title {
+    font-size: 15px;
+    color: #000;
+    display: block;
+}
+
+.blog-details-wrapper {
+    margin-bottom: 30px;
+}
+/*Blog details page css End*/
 
 /*Testimonial Review section css start*/
 .testimonial-section {
@@ -795,6 +905,11 @@ body {
     position: relative;
 }
 
+.banner-section img {
+    height: 300px;
+    object-fit: cover;
+}
+
 .banner-content-outer {
     position: absolute;
     top: 50%;
@@ -811,7 +926,7 @@ body {
 }
 
 .banner-content-outer .title {
-    font-size: 40px;
+    font-size: 35px;
     color: #fdfbec;
     text-transform: uppercase;
     font-weight: 600;
@@ -839,7 +954,7 @@ body {
     color: #ff5733;
     font-size: 18px;
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 1px;
 }
 
@@ -1202,3 +1317,32 @@ body {
 }
 
 /*Contact section css End*/
+
+/*Terms & conditions css start*/
+.terms-and-conditions-content {
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.terms-and-conditions-content .content-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.terms-and-conditions-content .content-title i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: #fc9d01;
+}
+
+.terms-and-conditions-content .content-text {
+    font-size: 16px;
+    color: #000;
+    line-height: 25px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+/*Terms & conditions css End*/

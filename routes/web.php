@@ -13,15 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('clear', function () {
-    \Artisan::call('cache:clear');
-    \Artisan::call('config:clear');
-    \Artisan::call('route:clear');
-    \Artisan::call('view:clear');
-    \Artisan::call('optimize');
-    dd("All clear!");
-});
-
 Route::get('/', [\App\Http\Controllers\Frontend\FrontendController::class, 'index']);
 Route::get('/service-list', [\App\Http\Controllers\Frontend\FrontendController::class, 'list']);
 Route::post('/service/request', [\App\Http\Controllers\Frontend\FrontendController::class, 'serviceRequest']);
@@ -29,6 +20,11 @@ Route::get('/service/details/{id}/{slug}', [\App\Http\Controllers\Frontend\Front
 Route::get('/contact', [\App\Http\Controllers\Frontend\FrontendController::class, 'contact']);
 Route::post('/contact/store', [\App\Http\Controllers\Frontend\FrontendController::class, 'contactStore']);
 Route::get('/all-project', [\App\Http\Controllers\Frontend\FrontendController::class, 'showAllProject']);
+Route::get('/blog-details', [\App\Http\Controllers\Frontend\FrontendController::class, 'showBlogDetails']);
+Route::get('/term-conditions', [\App\Http\Controllers\Frontend\FrontendController::class, 'showTermsConditions']);
+Route::get('/privacy-policy', [\App\Http\Controllers\Frontend\FrontendController::class, 'showPrivacyPolicy']);
+Route::get('/payment-policy', [\App\Http\Controllers\Frontend\FrontendController::class, 'showPaymentPolicy']);
+Route::get('/blog', [\App\Http\Controllers\Frontend\FrontendController::class, 'showBlog']);
 
 Auth::routes();
 
@@ -60,10 +56,3 @@ Route::group(['prefix' => 'portfolio'], function (){
     Route::post('/update/{portfolio}', [App\Http\Controllers\Admin\PortfolioController::class, 'update']);
     Route::get('/delete/{portfolio}', [App\Http\Controllers\Admin\PortfolioController::class, 'destroy']);
 });
-
-Route::get('/sliders', [\App\Http\Controllers\Admin\SettingController::class, 'sliders']);
-Route::get('/slider/create', [\App\Http\Controllers\Admin\SettingController::class, 'sliderCreateForm']);
-Route::post('/slider/store', [\App\Http\Controllers\Admin\SettingController::class, 'sliderStore']);
-Route::get('/slider/edit/{slider}', [\App\Http\Controllers\Admin\SettingController::class, 'sliderEdit']);
-Route::post('/slider/update/{slider}', [\App\Http\Controllers\Admin\SettingController::class, 'sliderUpdate']);
-Route::get('/slider/delete/{slider}', [\App\Http\Controllers\Admin\SettingController::class, 'sliderDelete']);
