@@ -1,0 +1,232 @@
+@media screen and (max-width: 991px) {
+    .nav-toggle-btn {
+        display: flex;
+    }
+
+    .menu-visible .nav-toggle-btn .btn-inner {
+        border-color: transparent;
+    }
+
+    .menu-visible .nav-toggle-btn .btn-inner:before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .menu-visible .nav-toggle-btn .btn-inner:after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .nav-items-wrapper .nav-item-list {
+        flex-direction: column;
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        padding-top: 30px;
+        display: block;
+        width: 300px;
+        height: 100vh;
+        background: #ffffff;
+        align-items: flex-start;
+        padding-left: 5%;
+        z-index: 99;
+        overflow: hidden;
+        transition: all .5s ease;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .menu-visible .nav-item-list {
+        right: 0;
+    }
+
+    .nav-item-list .nav-list-item {
+        height: auto;
+    }
+
+    .nav-item-link.get-service {
+        margin-left: 0;
+        padding-left: 17px;
+    }
+
+    .nav-item-link {
+        padding-left: 0;
+    }
+
+    .nav-item-link {
+        color: #000;
+        padding-bottom: 15px;
+    }
+
+    .nav-item-link.get-service {
+        background: #FF5733;
+        color: #fff;
+        margin-top: 5px;
+        animation: shake 2.5s;
+        animation-iteration-count: infinite;
+    }
+
+    .slider-content-outer .slider-content h2 {
+        font-size: 26px;
+    }
+
+    .slider-content-outer .slider-content h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .slider-content-outer .slider-content h4 {
+        font-size: 20px;
+    }
+
+    .slider-content-outer .slider-content {
+        padding: 40px;
+    }
+
+    .service-item-outer {
+        width: calc(100%/2);
+    }
+
+    .service-item-outer:nth-child(6n+2) {
+        border-right: none;
+    }
+
+    .renovation-item-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .footer-item-wrapper {
+        margin-bottom: 25px;
+    }
+
+    .service-list-item-content .custom-title {
+        font-size: 20px;
+    }
+
+    .service-list-item-content .description {
+        font-size: 13px;
+    }
+
+    .service-list-item-content .view-details-btn {
+        font-size: 16px;
+    }
+
+    .category-details-wrapper img {
+        height: auto;
+    }
+
+    .category-details-title {
+        margin: 13px 0;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .slider-content-outer {
+        padding: 0;
+    }
+
+    .slider-content-outer .slider-content {
+        padding-right: 0;
+    }
+
+    .slider-content-outer .slider-content h4 {
+        line-height: normal;
+    }
+
+    .service-item-outer {
+        width: 100%;
+    }
+
+    .service-item-outer:nth-child(6n+1) {
+        border-right: none;
+    }
+
+    .service-list-item-image {
+        margin-bottom: 15px;
+    }
+
+    .service-list-top-content .des {
+        font-size: 14px;
+    }
+
+    .footer-section {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .category-details-right {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .slider-item {
+        height: 500px;
+    }
+
+    .slider-content-outer .slider-content h2 {
+        font-size: 20px;
+    }
+
+    .slider-content-outer .slider-content h1 {
+        font-size: 30px;
+    }
+
+    .slider-content-outer .slider-content h4 {
+        font-size: 16px;
+    }
+
+    .slider-content-outer .slider-content {
+        padding: 20px 0 20px 25px;
+    }
+
+    .banner-content-outer .title {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+
+    .breadcrumb-outer .breadcrumbs_item.active {
+        font-size: 16px;
+    }
+
+    .breadcrumb-outer .separator:after {
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .slider-item {
+        height: 300px;
+    }
+
+    .slider-content-outer .slider-content h2 {
+        font-size: 18px;
+    }
+
+    .slider-content-outer .slider-content h1 {
+        font-size: 25px;
+    }
+
+    .slider-content-outer .slider-content h4 {
+        font-size: 14px;
+    }
+
+    .service-item-img {
+        margin-bottom: 10px;
+    }
+
+    .service-item-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .section-heading {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .service-list-item-content .view-details-btn.whatsapp {
+        margin-top: 10px;
+    }
+}
